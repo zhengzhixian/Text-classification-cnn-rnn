@@ -176,8 +176,8 @@ Time usage: 0:00:05
 从混淆矩阵也可以看出分类效果非常优秀。
 
 ##  文件保存
-dataprocessing.py 的 model_convert 函数
-将checkpoints 文件存储为.pb格式 用以线上java tensorflow的部署
+`dataprocessing.py` 的 `model_convert` 函数
+将 `checkpoints` 文件存储为.pb格式 用以线上java tensorflow的部署
 
 ## RNN循环神经网络
 
