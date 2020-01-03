@@ -7,7 +7,7 @@ import tensorflow as tf
 import tensorflow.contrib.keras as kr
 
 from cnn_model import TCNNConfig, TextCNN
-from data.cnews_loader import read_category, read_vocab
+from cnews_loader import read_category, read_vocab
 
 try:
     bool(type(unicode))
@@ -16,10 +16,9 @@ except NameError:
 
 # base_dir = 'data/cnews'
 # vocab_dir = os.path.join(base_dir, 'cnews.vocab.txt')
-vocab_dir = 'data/yinliuModel_huifu/vocab.txt'
-save_dir = 'checkpoints/checkpoints_yinliuModel_huifu'
+vocab_dir = 'data/shuazuanModel_huifu/vocab.txt'
+save_dir = 'checkpoints/checkpoints_shuazuan_huifu'
 save_path = os.path.join(save_dir, 'best_validation')  # 最佳验证结果保存路径
-
 
 class CnnModel:
     def __init__(self):
